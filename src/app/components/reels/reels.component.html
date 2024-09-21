@@ -1,0 +1,32 @@
+<div class="dz-box style-4">
+    <div class="title-bar align-items-end mb-0" [hidden]="global.isScrollingDown">
+        <div class="left">
+            <h4 class="title max-w200">Reels recientes</h4>
+        </div>
+        <a href="products.html">ver todas</a>
+    </div>
+    <div class="swiper dz-category-swiper3 mb-3" style="padding: 15px 15px 0 15px !important;">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide" *ngFor="let item of reels" >
+                <img src="assets/images/avatar/5.jpg" alt=""  class="media media-55"  style="border-radius: 50%; cursor: pointer;"
+
+                (click)="selectCategory(item[0])"
+                [ngClass]="{'active': item[0] === config.categorySelected}">	
+            </div>
+
+            <!-- <div class="swiper-slide" *ngFor="let item of reels">
+                <a  
+                   class="category-tag tag-lg"
+                   style="cursor: pointer;"
+
+                   (click)="selectCategory(item[0])"
+                   [ngClass]="{'active': item[0] === config.categorySelected}">
+                  {{ item[1] }}
+                </a>
+              </div> -->
+              
+        
+        </div>
+    </div>
+  </div>

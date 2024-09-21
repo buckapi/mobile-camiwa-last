@@ -1,0 +1,105 @@
+<!-- Main Content Start -->
+<main class="page-content space-top p-b60">
+    <div class="container pt-20 pb-20">
+        <!-- Banner Start -->
+        <div class="dz-banner ">
+            <div class="swiper banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="inner-banner">
+                            <div class="left-content">
+                                <h4 class="title" data-swiper-parallax="-300">Prioridad a tu bienestar, donde quiera que estés.</h4>
+                                <p data-swiper-parallax="-100"><span class="text-success"></span> </p>
+                                <div class="input-group input-group-icon input-sm">
+                                    <span class="input-group-text">
+                                        <div class="input-icon">
+                                            <i class="feather icon-search opacity-100"></i>
+                                        </div>
+                                    </span>
+                                    <input type="search" class="form-control font-16" style="border-radius: 5px !important;" placeholder="Search Products">								
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div class="dz-media">
+                                    <img src="https://azim.commonsupport.com/Docpro/assets/images/resource/about-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                    <!-- <div class="swiper-slide">
+                        <div class="inner-banner">
+                            <div class="left-content">
+                                <h4 class="title" data-swiper-parallax="-300">Conectamos pacientes globales con especialistas locales.</h4>
+                                <p data-swiper-parallax="-100">No code need. Plus free shipping on <span class="text-success">$99+</span> orders!</p>
+                                <a href="javascript:void(0);" class="btn btn-thin btn-sm btn-primary">Adopt A Pet</a>
+                            </div>
+                            <div class="right-content">
+                                <div class="dz-media">
+                                    <img src="assets/images/banner/pic1.png" alt="">
+                                </div>
+                            </div>
+                        </div>	
+                    </div> -->
+                    <!-- <div class="swiper-slide">
+                        <div class="inner-banner">
+                            <div class="left-content">
+                                <h4 class="title" data-swiper-parallax="-300">Tu salud es nuestra misión, desde cualquier lugar del mundo.</h4>
+                                <p data-swiper-parallax="-100">No code need. Plus free shipping on <span class="text-success">$99+</span> orders!</p>
+                                <a href="javascript:void(0);" class="btn btn-thin btn-sm btn-primary">Adopt A Pet</a>
+                            </div>
+                            <div class="right-content">
+                                <div class="dz-media">
+                                    <img src="assets/images/banner/pic1.png" alt="">
+                                </div>
+                            </div>
+                        </div>	
+                    </div> -->
+                </div>
+            </div>	
+        </div>
+        <!-- Banner End -->
+
+        <!-- Category End -->
+        <!-- <app-categories  class="pt-20" style="padding: 25px 10px 10px;" [hidden]="configService.showServices"></app-categories> -->
+        <!-- Category2 Start -->
+    <!-- <app-services [hidden]="configService.showServices"></app-services> -->
+<app-reels style="padding: 25px 10px 10px;"></app-reels>
+
+        <div class="dz-box style-2" style="padding-top: 0px !important;">
+            <div class="title-bar">
+                <h5 class="title mb-0">Clínicas recomendadas</h5>
+                <a >Ver todas</a>
+            </div>
+            <div class="row ">
+                    <div class="col-12 col-lg-2 m-b35" *ngFor="let specialist of global.specialists" (click)="global.viewClinic(specialist)" >
+                        <div class="dz-card style-2">
+                            <div class="dz-media">
+                                <a >
+                                    <img src="{{specialist.images[0]}}" alt="image" class="responsive-image">
+                                </a>
+                                
+                            </div>
+                            <div class="dz-content">
+                                <h6 class="title"><a >Dog Body Belt</a></h6>
+                                <ul class="dz-meta">
+                                    <li class="dz-price">$80<del>$95</del></li>
+                                    <li class="dz-status"><span>Free delivery</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+            </div>
+            
+        </div>
+
+    
+        <!-- Beat Deals -->
+
+    
+
+        
+    </div>
+</main>
+<!-- Main Content End -->
